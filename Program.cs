@@ -27,6 +27,10 @@ namespace CSharp2
                     Console.WriteLine("The correct number is smaller.");
 
                 }
+                else if (guess < 1 && guess > 21) {
+
+                    Console.WriteLine("Expecting number from 1 to 20. Keep up.");
+                }
                 else {
 
                     Console.WriteLine("Correct! You win!");
