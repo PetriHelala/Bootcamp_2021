@@ -1,7 +1,4 @@
 .vscode
-*.exe
-*screenshots
-*trainingdaybin
 bin/ 
 obj/ 
 CSharp2.csproj
