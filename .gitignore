@@ -1,1 +1,5 @@
+.vscode
 *.exe
+bin/ 
+obj/ 
+CSharp2.csproj
