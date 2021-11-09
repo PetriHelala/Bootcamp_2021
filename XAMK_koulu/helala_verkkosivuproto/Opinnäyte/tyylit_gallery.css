@@ -1,0 +1,324 @@
+body {
+	width:960px;
+	height:1500px;
+	margin:auto;
+	background-color:#000;
+	background-size:175%;
+	background-image:url("kuvat/elitewall4.jpg");
+}
+
+@font-face {
+	font-family:omafontti1;
+	src:url("coalition/omafontti1.ttf");
+}
+
+#wrapper {
+	width:100%;
+	height:2316px;
+	clear:left;
+	margin:auto;
+	margin-bottom:110px;
+	padding:20px;
+	padding-left:20px;
+	border-radius:10px;
+	background-color:#000;
+	box-shadow:0px 4px 4px #fff;
+}
+
+#header {
+	width:100%;
+	height:230px;
+	background-image: url("kuvat/elite2bans.jpg");
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+
+#nav {
+	width:100%;
+	height:30px;
+	margin:0;
+	padding:0;
+	clear:both;
+	position:relative;
+	bottom:46px;
+	color:#fff;
+	border-radius:5px;
+	background-color:#944e09;
+}
+
+#ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#nav li {
+	display:inline;
+	float:left;
+}
+
+#nav a:link, a:visited {
+	display:block;
+	width:180px;
+	height:15px;
+	margin-right:44px;
+	padding:3px;
+	padding-bottom:5px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+	-webkit-transform:uppercase;
+	-ms-transform:uppercase;
+	-o-transform:uppercase;
+	
+	border-radius:5px;
+	box-shadow:0px 4px 4px #fff;
+	opacity:0.8;
+}
+
+#nav a:hover {
+	background-color:#000;
+	position:relative;
+	top:2px;
+	transition:0.5s;
+	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
+	-ms-transition:0.3s;
+	opacity:1;
+}
+
+#out {
+	width:60px;
+	height:15px;
+	margin:0;
+	padding:0;
+	float:right;
+	position:relative;
+	bottom:20px;
+	text-decoration:none;
+}
+
+#out a:link, a:visited {
+	color:#fff;
+}
+
+#shiptext {
+	width:95%;
+	height:460px;
+	margin:auto;
+}
+
+#shiptext p {
+	font-weight:bold;
+	color:#bd5d00;
+	text-align:justify;
+	border-bottom:solid;
+	border-width:1px;
+	border-color:#eae8e8;
+	padding-bottom:15px;
+}
+
+#content {
+	width:100%;
+	height:1445px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#de8125;
+	border-radius:10px;
+	box-shadow:0px 6px 6px #de8125;
+	background-color:#010000;
+}
+
+#content ul {
+	color:#fff;
+	list-style-type:none;
+}
+
+#content li {
+	color:#fff;
+	font-weight:bold;
+}
+
+#content a:link, #content a:visited {
+	color:#006cc8;
+	text-decoration:none;
+}
+
+#content a:hover {
+	color:#00fff6;
+}
+
+#released {
+	width:80%;
+	text-align:center;
+	position:relative;
+	border-style:solid;
+	border-width:1px;
+	border-color:#fff;
+	border-radius:15px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:auto;
+	margin-top:30px;
+}
+
+#released h2 {
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-family:omafontti1;
+}
+
+#col1 {
+	width:300px;
+	float:left;
+	margin-left:20px;
+	margin-right:50px;
+	margin-bottom:30px;
+}
+
+#col1 li {
+	margin-bottom:5px;
+}
+
+#col2 {
+	width:300px;
+	float:left;
+	margin-right:50px;
+}
+
+#col2 li {
+	margin-bottom:5px;
+}
+
+#cqc {
+	text-align:center;
+	color:#fff;
+	padding-right:50px;
+	margin-top:20px;
+}
+
+#cqc h4 {
+	margin:0;
+	padding:0;
+}
+
+#col3 {
+	width:200px;
+	float:left;
+	margin-right:30px;
+}
+
+#col3 li {
+	margin-bottom:5px;
+}
+
+#upcoming {
+	width:80%;
+	clear:left;
+	position:relative;
+	text-align:center;
+	border-style:solid;
+	border-width:1px;
+	border-color:#fff;
+	border-radius:15px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:auto;
+}
+
+#upcoming h2 {
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-family:omafontti1;
+}
+
+
+#col4 {
+	width:300px;
+	float:left;
+	margin-left:200px;
+	margin-right:50px;
+	margin-bottom:30px;
+	margin-top:10px;
+}
+
+#col4 li {
+	margin-bottom:5px;
+}
+
+#speculated {
+	text-align:center;
+	color:#fff;
+	padding-right:50px;
+	margin-top:20px;
+}
+
+#speculated h4 {
+	margin:0;
+	padding:0;
+	margin-right:180px;
+}
+
+#col5 {
+	width:400px;
+	float:left;
+}
+
+#col5 li {
+	margin-bottom:5px;
+}
+
+#details {
+	width:95%;
+	margin:auto;
+	height:auto;
+	height:auto;
+	clear:left;
+	border-top-style:solid;
+	border-top-width:1px;
+	border-top-color:orange;
+}
+
+#details h2 {
+	width:150px;
+	color:#fff;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#fff;
+}
+
+#details h4 {
+	color:#fff;
+	margin:0;
+	padding:0;
+}
+
+#details p {
+	font-weight:bold;
+	color:#bd5d00;
+	text-align:justify;
+	border-bottom:solid;
+	border-width:1px;
+	border-color:#eae8e8;
+	padding-bottom:15px;
+}
+
+#footer {
+	width:100%;
+	height:30px;
+	float:left;
+	margin-top:97px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+}
+
+#footer p {
+	margin:0;
+	padding:0;
+}

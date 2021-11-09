@@ -1,0 +1,348 @@
+
+/* tyylitiedosto, jolla vaikutetaan sivuston ulkoasuun (typografia ja laitteen kokoon liittyvät muutokset sivustolla) */
+/* Käyttämässäni frameworkissa (template) on useita tyylejä, joita en halunnut muuttaa */
+
+h1 {
+	font-size:25px;
+}
+
+p {
+	letter-spacing:0.5px;
+	text-align:justify;
+	line-height:25px;
+}
+
+img {
+	width:100%;
+	margin:20px 0;
+}
+
+/* Karttasovellukseen liittyvät koko muutokset, napit paikkakunnittain ja kartan tulostusta varten oleva elementti (iframe) */
+
+#karttasovellus {
+	width:100%;
+	height:auto;
+	text-align:center;
+}
+
+#karttasovellus a {
+	background-color:none;
+}
+
+iframe {
+	max-width:100%;
+	width:67%;
+	height:350px;
+}
+
+/* Viiva, jonka halusin tekstin erottajaksi. Määräsin omat tyylit tälle viivalle */
+
+hr {
+	height:1px;
+	color:#123455;
+	background-color:#123455;
+	border:none;
+}
+
+/* Karttasovelluksessa käytän a href -linkitystä. ul:sta (unordered list) ensin marginaalit nollille ja listatyypin pallukat pois */
+
+ul {
+	margin:0;
+}
+
+li {
+	list-style-type:none;
+}
+
+.linkit {
+	max-width:100%;
+}
+
+/* suomi-ruotsi kielivaihtoehdon ikoni */
+
+.fise {
+	width:25px;
+	margin-left:50px;
+}
+
+/* Mobiililaitteelle ominaiset tyylit. Mitä näkyy, mitä ei näy sekä niiden tyylit  */
+
+#viesti {
+	display:none;
+	height:300px;
+}
+
+.navbar-header {
+	min-width:250px;
+}
+
+.banner {
+	min-width:320px;
+	margin:auto;
+}
+
+.section-lead {
+	margin-top:20px;
+}
+
+.kuvitus-students {
+	width:50%;
+	height:auto;
+	float:right;
+	min-width:280px;
+	margin-left:15px;
+}
+
+.paragraphs {
+	width:100%;
+	height:auto;
+	float:left;
+}
+
+.paragraphs-one, .paragraphs-two, .paragraphs-three, .paragraphs-four {
+	width:100%;
+}
+
+#kontakti {
+	width:100%;
+	margin:auto;
+}
+
+.amk {
+	width:100%;
+	text-align:center;
+}
+
+.amk li {
+	height:25px;
+}
+
+.some {
+	width:100%;
+	margin:50px 0;
+}
+
+.somet {
+	margin-top:15px;
+	padding-top:15px;
+}
+
+/* facebook ja funity logoon liittyvät tyylit */
+
+.face {
+	width:30px;
+	height:auto;
+	margin-left:30%;
+	margin-right:10px;
+	float:left;
+}
+
+.funity {
+	width:120px;
+	height:auto;
+	margin-right:30%;
+	float:right;
+}
+
+/* Lomakkeen tyylit */
+
+.container-kehys {
+	width:100%;
+	padding:0 30%;
+	margin:auto;
+}
+
+.container-form {
+	margin:50px 0;
+	text-align:center;
+}
+
+.cmxform {
+	margin:auto;
+}
+	
+label {
+	display: inline-block;
+	width:100px;
+	margin:auto;
+}
+
+.textbox {
+	min-width:50%;
+	width:70%;
+}
+
+legend {
+	padding: 0.5em;
+}
+	
+fieldset fieldset label {
+	display: block;
+}
+
+#signupForm {
+	width: 80%;
+}
+
+.container-form .submit {
+	width:100px;
+	font-weight:bold;
+	background-color:lightblue;
+	border:solid 1px black;
+	border-radius:2px;
+}
+
+.ui-widget .ui-widget-content .ui-corner-all {
+	margin:auto;
+}
+
+/* div elementti, jossa on viimeisen päivityksen päivämäärä */
+
+.paivays {
+	float:right;
+	margin:25px;
+	color:#b7b7b7;
+}
+
+footer .col-lg-12 {
+	color:#fff;
+	font-weight:bold;
+}
+
+/* Koko-spesifisiä tyylimuutoksia */
+/* Tyyliin tapahtuvat muutokset ruudun koon ylittäessä 551px */
+
+@media only screen and (min-width:551px) {
+	p {
+		text-align:justify;
+	}
+	.amk {
+		width:33%;
+		float:left;
+		margin-top:50px;
+		text-align:center;
+	}
+
+	.amk li {
+		height:30px;
+	}
+	
+	#karttasovellus a {
+		display:block;
+		width:100%;
+		margin:0 4%;
+		text-decoration:none;
+		text-align:center;
+		border:solid 1px black;
+		padding:5px;
+	}	
+	
+	iframe {
+		height:555px;
+	}
+}
+
+/* Tyyliin tapahtuvat muutokset ruudun koon ylittäessä 993px */
+
+@media only screen and (min-width:993px) {
+	#karttasovellus a {
+		display:block;
+		width:100%;
+		margin:0.5% 4%;
+		text-decoration:none;
+		text-align:center;
+		border:solid 1px black;
+		padding:10px;
+	}
+	
+	.linkit {
+		width:29%;
+		margin:0 1%;
+		float:left;
+	}
+
+	#karttasovellus a:hover {
+		background-color:#a7a7a7;
+	}
+	
+	iframe {
+		height:680px;
+	}
+}
+
+/* Tyyliin tapahtuvat muutokset ruudun koon alittaessa 322px */
+
+@media only screen and (max-width:322px) {
+	h1 {
+		font-size:0.8vw;
+	}
+	
+	.kuvitus-students {
+		display:none;
+	}
+}
+
+/* Tyyliin tapahtuvat muutokset ruudun koon alittaessa 550px */
+
+@media only screen and (max-width:550px) {
+	
+	p {
+		margin:20px 0;
+	}
+	
+	hr {
+		display:none;
+	}
+	
+	#karttasovellus a {
+		display:block;
+		width:100%;
+		margin:0.5% 4%;
+		text-decoration:none;
+		text-align:center;
+		border:solid 1px black;
+		padding:10px;
+	}
+	
+	.linkit {
+		width:100%;
+		margin:auto;
+		margin:10px 0;
+		text-align:center;
+		font-weight:bold;
+	}
+	
+	iframe {
+		width:80%;
+	}	
+}
+
+@media only screen and (max-width:1012px) {
+
+	.textbox {
+		width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

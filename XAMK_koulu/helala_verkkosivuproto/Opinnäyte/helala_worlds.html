@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elite Dangerous | Worlds</title>
+<meta charset="utf-8"/>
+<link href="tyylit_worlds.css" media="all" rel="stylesheet" type="text/css"/>
+
+<script>
+
+var slideimages = new Array();
+slideimages[0] = new Image();
+slideimages[0].src = "elite/elitescroll1.png";
+slideimages[1] = new Image();
+slideimages[1].src = "elite/elitescroll2.png";
+slideimages[2] = new Image();
+slideimages[2].src = "elite/elitescroll3.png";
+slideimages[3] = new Image();
+slideimages[3].src = "elite/elitescroll4.png";
+slideimages[4] = new Image();
+slideimages[4].src = "elite/elitescroll5.png";
+slideimages[5] = new Image();
+slideimages[5].src = "elite/elitescroll6.png";
+slideimages[6] = new Image();
+slideimages[6].src = "elite/elitescroll7.png";
+slideimages[7] = new Image();
+slideimages[7].src = "elite/elitescroll8.png";
+
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<div id="header"></div>
+
+<div id="nav">
+	<ul>
+		<li><a href="helala_home.html">Home</a></li>
+		<li><a href="helala_gallery.html">Shipyard</a></li>
+		<li><a href="helala_worlds.html">Worlds</a></li>
+		<li><a href="helala_community.html">Community</a></li>
+	</ul>
+</div>
+
+<div id="out"><a href="helala_index.html">Log out</a></div>
+
+<div id="topcol">
+	<iframe width="650" height="405" src="https://www.youtube.com/embed/CVgeRWMQ8c0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="intro">
+		With the latest expansion aptly named Horizons, you can visit billions of worlds. Planets much like 
+		the ones we find in our solar system; Moons teeming with core activity like Europa in its struggle 
+		to cope with Jupiter's massive pull; Taking in the scenery of Eagle nebula with its vibrant colors; 
+		Traveling through the rabbit hole into unknown space at the far side of the galaxy where other
+		civilizations have made their home; Visiting the monster lurking in the center of our galaxy, 
+		Sagittarius A* - a massive black hole 4.000.000 times the mass of our sun; And many more fantastic 
+		opportunities just waiting to be discovered.
+</div>
+
+<div id="flip">
+
+<div id="edge">
+
+	<div id="pic">
+	<a href="javascript:slidelink()"><img id="slide" src="kuvat/elite/elitescroll1.png"/></a>
+	</div>
+
+</div>
+
+</div>
+
+<div id="text">
+	<p>
+	Ralph Waldo Emerson once asked what we would do if the stars only came out once every thousand years. 
+	No one would sleep that night, of course. The world would create new religions overnight. We would be 
+	ecstatic, delirious, made rapturous by the glory of God. Instead, the stars come out every night and 
+	we watch television.
+	<br>
+	<br>
+	— Paul Hawkens; Commencement address, University of Portland, 2009.
+	</p>
+</div>
+
+
+<script>
+
+	//variable that will increment through the images
+	var step = 0
+	var whichimage = 0
+
+	function slideit(){
+	
+		//jos selain ei tue kuvaobjektia, tuloo exit
+		if (!document.images)
+		return
+		
+		document.getElementById("slide").src = slideimages[step].src
+		whichimage = step;
+		
+		if (step < 7)
+		step++;
+
+		
+		else
+		step=0
+
+		//kutsutaan slideit() funktiota joka kolmas sekunti
+		setTimeout("slideit()",3000)
+		
+	}
+
+function slidelink(){
+	if (whichimage == 0)
+	window.location = "link1.htm"
+	else if (whichimage == 1)
+	window.location = "link2.htm"
+	else if (whichimage == 2)
+	window.location = "link3.htm"
+	else if (whichimage == 3)
+	window.location = "link4.htm"
+	else if (whichimage == 4)
+	window.location = "link5.htm"
+	else if (whichimage == 5)
+	window.location = "link6.html"
+	else if (whichimage == 6)
+	window.location = "link7.htm"
+	else if (whichimage == 7)
+	window.location = "link8.htm"
+	else if (whichimage == 8)
+	window.location = "link1.htm"
+}
+
+slideit()
+
+</script>
+
+<div id="footer">
+	<p>
+		Copyright &#169 PETRI HELALA
+	</p>
+</div>
+
+</div>
+
+</body>
+</html>

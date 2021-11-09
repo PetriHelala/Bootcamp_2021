@@ -1,0 +1,73 @@
+body {
+	margin:auto;
+	color:#bd5d00;
+	font-weight:bold;
+	text-align:center;
+	background-color:#000;
+	background-size:175%;
+	background-image:url("kuvat/elitewall4.jpg");
+	background-repeat:no-repeat;
+}
+
+@font-face {
+	font-family:omafontti1;
+	src:url("coalition/omafontti1.ttf");
+}
+
+.square {
+	margin:auto;
+	width:600px;
+	height:auto;
+	position:relative;
+	top:340px;
+	opacity:0;
+	box-shadow:0px 4px 4px #fff;
+}
+
+.square.active {
+	margin:auto;
+	width:600px;
+	height:auto;
+	padding:30px;
+	position:relative;
+	top:340px;
+	border-radius:30px;
+	background-color:#000;
+	box-shadow:0px 4px 4px #fff;
+	opacity:1;
+	transition:1.5s;
+}
+
+#kirjautuminen h2 {
+	font-family:omafontti1;
+	font-size:25px;
+	margin-bottom:50px;
+}
+
+#ilmoitus {
+	height:30px;
+}
+
+.button {
+	display:block
+	width:70px;
+	height:50px;
+	margin-top:20px;
+	opacity:1.0;
+	background-image:url("kuvat/login.png");
+	background-size:100%;
+	border-radius:10px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#footer {
+	width:100%;
+	padding-bottom:20px;
+}
+
+#footer p {
+	position:relative;
+	top:30px;
+}
+

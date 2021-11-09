@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elite Dangerous | Index</title>
+<meta charset="utf-8"/>
+<link href="tyylit_index.css" media="all" rel="stylesheet" type="text/css"/>
+</head>
+
+<body onload="background-image:url("kuvat/elite1.png">
+<div id="content" class="square">
+	<div id="kirjautuminen">
+		<h2>Welcome to Elite: Dangerous</h2>
+		Username<br><input id="kayttaja"/></input>
+		<br><br>
+		Password<br><input id="salas" type="password"/></input>
+		<br><br>
+		<input class="button" id="submit" onclick="submit();" cursor="pointer";/>
+	</div>
+	<br><br>
+	<div id="ilmoitus"></div>
+	
+	<div id="footer">
+		<p>
+			Copyright &#169 PETRI HELALA
+		</p>	
+	</div>
+</div>
+
+<script>
+
+function submit() {
+
+	var kayttaja = "guest";
+	var salas = "";
+	
+	if(kayttaja == "guest" && salas == "") {
+		true;
+		location.href = "helala_home.html";
+	}
+	else {
+		document.getElementById("ilmoitus").innerHTML = "Give correct Username and Password";
+		false;
+	}
+}
+
+	document.addEventListener("mouseover", function (e) {
+		var squareEl = document.getElementById("content");
+		squareEl.className = "square active";
+	}, false);
+	
+	$("#square").on("mouseover", function() {
+	$(this).addClass("active");
+});
+
+</script>
+
+</body>
+</html>
