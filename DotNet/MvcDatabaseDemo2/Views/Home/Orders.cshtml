@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Northwind Orders";
+}
+<h1>@ViewData["Title"]</h1>
+
+@*
+
+    <p>The number of orders: @ViewBag.AllOrders.Count</p>
+
+    @foreach (MvcDatabaseDemo2.Models.Order order in ViewBag.AllOrders)
+    {
+        <p>@order.CustomerId - @order.OrderId</p>
+    }
+
+*@
+
+
+@*
+
+    @if (order.ShippedDate.HasValue)
+    {
+        <td>@order.ShippedDate.Value.ToString("d.M.yyyy")</td>
+    }
+    else
+    {
+        <td></td>
+    }
+
+
+*@
+
+<table class="table table-striped w-75">
+    <thead>
+        <tr>
+            <th>Order Id</th>
+            <th>Order Date</th>
+            <th>Ship To</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (MvcDatabaseDemo2.Models.Order order in ViewBag.AllOrders)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.OrderDate.Value.ToString("dd.MM.yyyy")</td>
+                <td>@order.ShipName</td>
+                <td>@order.ShipCity</td>
+                <td>@order.ShipCountry</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+﻿These three commands need to be executed to the project file. If you have the packages downloaded in Visual Studio 2019, all you have to do is add the packages to the project in the command line. 
+{
+dotnet Microsoft.EntityFrameworkCore
+dotnet Microsoft.EntityFrameworkCore.SqlServer
+dotnet Microsoft.EntityFrameworkCore.Tools
+}
+
+NOTE: When you run the scaffolding command, you CAN NOT have code in your project that requires the scaffold to have already been built. Copy the code to clipboard and run the scaffolding command first.
+
+The scaffold building command:
+
+dotnet ef dbcontext scaffold "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+This is for Package Manager Console: Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models

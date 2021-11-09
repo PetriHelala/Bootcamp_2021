@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<p>The number of customers: @ViewBag.AllCustomers.Count</p>
+
+@foreach (MvcDatabaseDemo2.Models.Customer customer in ViewBag.AllCustomers)
+{
+    <p>@customer.CustomerId - @customer.CompanyName</p>
+}
