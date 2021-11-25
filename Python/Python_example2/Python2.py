@@ -4,4 +4,3 @@ y=42
 y=x
 
 print(y)
-
