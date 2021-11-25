@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>We use this page to display our finest collection.</p>
+</div>
+
+@foreach (demoapp.Models.Product product in ViewBag.AllProducts)
+{
+
+    <div class="container d-flex justify-content-center mt-50 mb-50">
+        <div class="row">
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">@product.Picturedata</div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">@product.ProductName</a> </h6> <a href="#" class="text-muted" data-abc="true">Guitars</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$@product.Price</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="text-center">
+    <p>If you have questions concerning returns, please consult the 'Delivery' page before contacting us.</p>
+    <p>In case you want to contact us, please go to our 'Contact' page.</p>
+    <img src="~/img/stock_p5.jpg" />
+</div>
