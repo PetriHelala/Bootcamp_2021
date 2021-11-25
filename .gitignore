@@ -95,3 +95,8 @@
 /demo/demoapp2/appsettings.Development.json
 /demo/demoapp2/appsettings.json
 /demo/demoapp2/demoapp2.sln
+demo/muistio_tiedostot/Create.txt
+demo/muistio_tiedostot/ProductController.txt
+demo/muistio_tiedostot/ProductDBAccessLayer.txt
+demo/muistio_tiedostot/ProductEntities.txt
+Python/cplutest.cpp
